@@ -25,12 +25,12 @@ const Nav = () => {
             ? (<div>
                 <Navvie to="/">{loggedInUser}</Navvie>
                 <Navvie onClick={handleLogout} to="/">Logout</Navvie>
-                <Navvie to="/posts/new">Add a post</Navvie>
                 </div>)
             : (<div>
                 <Navvie to="/">guest</Navvie>
                 <Navvie to="/auth/login">Login</Navvie>
                 <Navvie to="/auth/register">Register</Navvie>
+                <Navvie to="/posts/new">Add a post</Navvie>
                 </div>)
             }
             <div >
